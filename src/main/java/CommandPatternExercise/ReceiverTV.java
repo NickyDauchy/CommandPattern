@@ -2,6 +2,7 @@ package CommandPatternExercise;
 
 public class ReceiverTV {
     private Boolean on ;
+    private int volume =0;
 
 
 
@@ -13,6 +14,14 @@ public class ReceiverTV {
     public void turnOff() {
         // Turning Off TV
         on = false;
+    }
+
+    public void volumeUp(){
+        volume++;
+    }
+
+    public void volumeDown(){
+        volume--;
     }
 
 }
